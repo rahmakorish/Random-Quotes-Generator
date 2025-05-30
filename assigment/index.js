@@ -1,0 +1,71 @@
+var quoteTexts = [
+  '"Be yourself; everyone else is already taken."',
+  '"I\'m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can\'t handle me at my worst, then you sure as hell don\'t deserve me at my best."',
+  '"Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe."',
+  '"Here\'s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They\'re not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can\'t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do."',
+  '"Insanity is doing the same thing, over and over again, but expecting different results."',
+  '"Only once in your life, I truly believe, you find someone who can completely turn your world around. You tell them things that you’ve never shared with another soul and they absorb everything you say and actually want to hear more. You share hopes for the future, dreams that will never come true, goals that were never achieved and the many disappointments life has thrown at you. When something wonderful happens, you can’t wait to tell them about it, knowing they will share in your excitement. They are not embarrassed to cry with you when you are hurting or laugh with you when you make a fool of yourself. Never do they hurt your feelings or make you feel like you are not good enough, but rather they build you up and show you the things about yourself that make you special and even beautiful."',
+  '"All that is gold does not glitter, Not all those who wander are lost; The old that is strong does not wither, Deep roots are not reached by the frost."',
+  '"Twenty years from now you will be more disappointed by the things that you didn\'t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover."',
+  '"Don\'t cry because it\'s over, smile because it happened."',
+  '"Be the change that you wish to see in the world."',
+  '"No one can make you feel inferior without your consent."',
+  '"I\'ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel."',
+  '"The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid."',
+  '"It is our choices, Harry, that show what we truly are, far more than our abilities."',
+  '"Imperfection is beauty, madness is genius and it\'s better to be absolutely ridiculous than absolutely boring."',
+  '"I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this."',
+  '"I may not have gone where I intended to go, but I think I have ended up where I needed to be."',
+  '"Outside of a dog, a book is man\'s best friend. Inside of a dog it\'s too dark to read."',
+  '"I solemnly swear that I am up to no good."',
+  '"The only way to do great work is to love what you do."',
+  '"It does not matter how slowly you go as long as you do not stop."',
+  '"Success is not final, failure is not fatal: It is the courage to continue that counts."',
+  '"You don’t love someone because they’re perfect, you love them in spite of the fact that they’re not."',
+  '"We accept the love we think we deserve."',
+  '"As he read, I fell in love the way you fall asleep: slowly, and then all at once."',
+  '"Don’t waste your time in anger, regrets, worries, and grudges. Life is too short to be unhappy."',
+  '"You are your best thing."',
+  '"Wasn’t friendship its own miracle, the finding of another person who made the entire lonely world seem somehow less lonely?"',
+  '"The love between humans is the thing that nails us to this earth."',
+  '"When you make loving others the story of your life, there’s never a final chapter, because the legacy continues."'
+];
+
+var authorNames = [
+  "Oscar Wilde",
+  "Marilyn Monroe",
+  "Albert Einstein",
+  "Steve Jobs",
+  "Narcotics Anonymous",
+  "Bob Marley",
+  "J.R.R. Tolkien",
+  "H. Jackson Brown Jr.",
+  "Dr. Seuss",
+  "Mahatma Gandhi",
+  "Eleanor Roosevelt",
+  "Maya Angelou",
+  "Jane Austen",
+  "J.K. Rowling",
+  "Marilyn Monroe",
+  "Pablo Neruda",
+  "Douglas Adams",
+  "Groucho Marx",
+  "J.K. Rowling",
+  "Steve Jobs",
+  "Confucius",
+  "Winston Churchill",
+  "Jodi Picoult",
+  "Stephen Chbosky",
+  "John Green",
+  "Roy T. Bennett",
+  "Toni Morrison",
+  "Hanya Yanagihara",
+  "Ann Patchett",
+  "Oprah Winfrey"
+];
+var index = 0;
+function displayText() {
+  index = Math.floor(Math.random() * quoteTexts.length);
+  document.getElementById("quoteText").innerHTML = quoteTexts[index]
+  document.getElementById("quoteAuthor").innerHTML = ' --' + authorNames[index]
+}

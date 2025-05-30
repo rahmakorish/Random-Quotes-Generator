@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma's Quotes Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">    
+<link rel="shortcut icon" href="./imgs/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container d-flex flex-column justify-content-center align-items-center text-center" id="mainContainer">
+    <h1 class="fs-1 fw-bolder p-5">Quote of the Day</h1> 
+    <p class="p-2 fs-3 fw-medium">Press the button below to recieve a random quote!</p>
+    <button class="w-25 p-4 m-3 rounded-0" onclick="displayText()" id="btn" type="submit">New Quote</button>
+    <p class="p-2 fs-2 fw-medium" id="quoteText"></p>
+    <p class="p-2 fs-2 fw-medium" id="quoteAuthor"></p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

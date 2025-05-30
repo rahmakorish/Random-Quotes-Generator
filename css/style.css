@@ -1,0 +1,12 @@
+h1{
+    font-family: "Boldonse", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    }
+button{
+    color: white !important;
+    background-color: blue !important;
+}
+button:hover{
+    background-color: green !important;
+}
